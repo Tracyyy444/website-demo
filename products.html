@@ -10,9 +10,9 @@
 
 <style>
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Ahom&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +36,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-Section{
+section{
     padding: 50px 100px;
 }
 header{
@@ -49,7 +49,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 8px 65px;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
     background-color: #ea9091;
 }
 header .shadow{
@@ -57,7 +57,7 @@ background-color: #ea9091;
 box-shadow: var(--box-shadow);
 }
 .logo img{
-    width: 100px;
+    width: 85px;
     mix-blend-mode: multiply;
 }
 .navbar {
@@ -69,10 +69,11 @@ box-shadow: var(--box-shadow);
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 500;
+   
 }
 .navbar a:hover{
     background-color: #eb6c6cce;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     transition: 0.2s all linear;
 }
 .navbar .active{
@@ -84,6 +85,7 @@ box-shadow: var(--box-shadow);
 .Heading h2{
     font-size: 1.8rem;
     text-transform: uppercase;
+    padding-top: 100px;
 }
 .Products-Container{
     display:grid;
@@ -208,6 +210,18 @@ margin: 0.5rem 0 0.5rem;
 </style>
 </head>
 <body>
+ <!-- Navbar -->
+ <header>
+    <a href="#" class="logo">
+        <img src="Haven.png" alt="Beauty Glam">
+
+<!--  Links -->
+<ul class="navbar">
+<li><a href="Index.html">Home</a></li>
+<li><a href="#Products">Products</a></li>
+</ul>
+ </header>
+
        <!--Products -->
        <section class="Products" id="Products">
         <div class="Heading">
@@ -241,7 +255,7 @@ margin: 0.5rem 0 0.5rem;
             </div>
                         <div class="box" data-name="Product Name">
                 <img src="mmLashes 1.jpeg" alt="">
-                <h3>Vegan Luxe Lashes</h3>
+                <h3>Silk Cat-eye Lashes</h3>
                 <div class="content">
                     <span>13000 rwf</span>
                     <a href="#">Add to Cart</a>
@@ -249,7 +263,7 @@ margin: 0.5rem 0 0.5rem;
             </div>
             <div class="box" data-name="Product Name">
                 <img src="mmLashes 2.jpeg" alt="">
-                <h3>Vegan Luxe Lashes</h3>
+                <h3>Mink Hybrid Lashes</h3>
                 <div class="content">
                     <span>13000 rwf</span>
                     <a href="#">Add to Cart</a>
@@ -257,7 +271,7 @@ margin: 0.5rem 0 0.5rem;
             </div>
             <div class="box" data-name="Product Name">
                 <img src="mmlashes 4.jpeg" alt="">
-                <h3>Vegan Luxe Lashes</h3>
+                <h3>Mega Synthetic Lashes</h3>
                 <div class="content">
                     <span>13000 rwf</span>
                     <a href="#">Add to Cart</a>
@@ -276,21 +290,21 @@ margin: 0.5rem 0 0.5rem;
                 <img src="Press On 2.jpeg" alt="">
                 <h3>Nude Brown Nails</h3>
                 <div class="content">
-                    <span>5000 rwf</span>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box" data-name="Product Name">
-                <img src="Press On 1.jpeg" alt="">
-                <h3>Pink & White Nails with a Bow</h3>
-                <div class="content">
                     <span>7000 rwf</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
             <div class="box" data-name="Product Name">
+                <img src="Press On 1.jpeg" alt="">
+                <h3>White Nails with a Bow</h3>
+                <div class="content">
+                    <span>12000 rwf</span>
+                    <a href="#">Add to Cart</a>
+                </div>
+            </div>
+            <div class="box" data-name="Product Name">
                 <img src="Heart-Shaped Pattern With Rhinestones.jpeg" alt="">
-                <h3>Pink Nails with Flowers</h3>
+                <h3>White Nails with a Pink Bow & Diamonds</h3>
                 <div class="content">
                     <span>8000 rwf</span>
                     <a href="#">Add to Cart</a>
@@ -298,15 +312,15 @@ margin: 0.5rem 0 0.5rem;
             </div>
             <div class="box" data-name="Product Name">
                 <img src="Coffin White French Acrylic Nails Tips Pink Bow TIE.jpeg" alt="">
-                <h3>Nude Brown Nails</h3>
+                <h3>Baby Purple Nails with a Pink Bow</h3>
                 <div class="content">
-                    <span>5000 rwf</span>
+                    <span>12000 rwf</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
             <div class="box" data-name="Product Name">
                 <img src="white nails with animation.jpeg" alt="">
-                <h3>Pink & White Nails with a Bow</h3>
+                <h3>White Nails with a pink flower</h3>
                 <div class="content">
                     <span>7000 rwf</span>
                     <a href="#">Add to Cart</a>
@@ -314,25 +328,25 @@ margin: 0.5rem 0 0.5rem;
             </div>
             <div class="box" data-name="Product Name">
                 <img src="flower bow nails.jpeg" alt="">
-                <h3>Pink Nails with Flowers</h3>
+                <h3>White Nails with Flowers & a Pink Bow </h3>
                 <div class="content">
-                    <span>8000 rwf</span>
+                    <span>12000 rwf</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
             <div class="box" data-name="Product Name">
                 <img src="Nail art 💅🏻.jpeg" alt="">
-                <h3>Nude Brown Nails</h3>
+                <h3>Light Green Nails with Diamonds Beads</h3>
                 <div class="content">
-                    <span>5000 rwf</span>
+                    <span>7000 rwf</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
             <div class="box" data-name="Product Name">
                 <img src="ITS NICE.jpeg" alt="">
-                <h3>Pink & White Nails with a Bow</h3>
+                <h3>Dark Red Nails with a white Bow </h3>
                 <div class="content">
-                    <span>7000 rwf</span>
+                    <span>8000 rwf</span>
                     <a href="#">Add to Cart</a>
                 </div>
             </div>
