@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help & Support</title>
+    <!--  Box Icons  -->
+    <link rel="stylesheet"
+    href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 <style>
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Ahom&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -86,6 +89,7 @@ h1{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,auto));
     gap: 1.5rem;   
+
  }
  .fags h2{
     font-size: 1.2rem;
@@ -96,6 +100,67 @@ h1{
     font-size: 0.938rem;
     margin-bottom: 10px;
  }
+ .Footer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    gap: 1.5rem;   
+ }
+ .Footer-Box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-items: center;
+ }
+ .Footer-Box p{
+    font-size: 0.968rem;
+    margin-bottom: 10px;
+ }
+ .Social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+ }
+ .Social a .bx{
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.2rem;
+ }
+ .Social a .bx:hover{
+    background: #ea9091;
+    color: var(--second-color);
+ }
+ .Footer-Box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .Footer-Box h2{
+    text-align: center;
+ }
+ .Footer-Box li a{
+    color: var(--text-color);
+ }
+ .Footer-Box li a:hover{
+    color: #ea9091;
+ }
+ .Footer-map{
+    align-items: center;
+    text-align: center;
+ }
+ .Contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+ }
+ .Contact span{
+    display: flex;
+    align-items: center;
+ }
+ .Contact i{
+    font-size: 20px;
+    margin-right: 1rem;
+}
 </style>
 
 </head>
@@ -134,6 +199,24 @@ h1{
     <p style="color: #cb006d; text-align: center; font-size: 1rem;">Learn how to <strong>place an order</strong></p>
 </div>
 </section>
+<section class="Footer">
+    <div class="Footer-Box">
+    <h3 style="color: #ff383f; text-align: center; font-size: 1rem;">Lustre & Bloom Haven</h3>
+    <p style="color: #f72f9a; text-align: center; font-size: 0.986rem;">
+        Our mission is to value and expand our reach<br>
+        And bringing our unique approach to beauty to more communities.<br>
+        And with the vision to transform how people think about beauty, <br>
+        making it a tool for empowerment and self-expression.<br>
+        </p></div>
+        
+        <div class="Social">
+            <h3 style="color: #ff383f; text-align: center; font-size: 1rem;">YOU CAN ALSO <br>VISIT US ON;</h3><br><br>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+    </div>
 
+</section>
 </body>
 </html>
