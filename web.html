@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        /* Basic styles for the search bar and products */
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .product {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: none; /* Initially hide products */
+        }
+        .product h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for products..." onkeyup="filterProducts()">
+</div>
+
+<div class="product-container">
+    <div class="product" data-name="XO Wispy Lashes">
+        <h3>XO Wispy Lashes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="product" data-name="XO Mega Lashes">
+        <h3>XO Mega Lashes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="product" data-name="Vegan Luxe Lashes">
+        <h3>Vegan Luxe Lashes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="product" data-name="Pink Nails With Flowers">
+        <h3>Pink Nails With Flowers</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="product" data-name="Nude Brown Nails">
+        <h3>Nude Brown Nails</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="product" data-name="Pink & White Nails with a Bow">
+        <h3>Pink & White Nails with a Bow</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+</div>
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for products..." onkeyup="filterProducts()">
+</div>
+
+<div class="Customers-Container">
+    <!-- Assuming these are the products with the .box class -->
+    <div class="box" data-name="Keza Fidella">
+        <img src="your-image-1.jpg" alt="Keza Fidella">
+        <h2>Keza Fidella</h2>
+        <p>Product description for Keza Fidella</p>
+    </div>
+    <div class="box" data-name="Anasa Faith">
+        <img src="your-image-2.jpg" alt="Anasa Faith">
+        <h2>Anasa Faith</h2>
+        <p>Product description for Anasa Faith</p>
+    </div>
+    <div class="box" data-name="Isimbi Brianna">
+        <img src="your-image-3.jpg" alt="Isimbi Brianna">
+        <h2>Isimbi Brianna</h2>
+        <p>Product description for Isimbi Brianna</p>
+    </div>
+    <!-- Add more products as needed -->
+</div>
+
+
+<script>
+    // JavaScript function to filter products based on search input
+    function filterProducts() {
+        const input = document.getElementById('search-input').value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+        
+        products.forEach(product => {
+            const productName = product.getAttribute('data-name').toLowerCase();
+            if (productName.includes(input)) {
+                product.style.display = 'block'; // Show matching products
+            } else {
+                product.style.display = 'none'; // Hide non-matching products
+            }
+        });
+    }
+
+
+
+    function filterProducts(searchValue) {
+        const products = document.querySelectorAll('.Product-Container');
+        products.forEach(product => {
+            const productName = product.querySelector('.Content').textContent.toLowerCase();
+            if (productName.includes(searchValue.toLowerCase())) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+     }
+     
+</script>
+
+</body>
+</html>
+
+
+
+
+if (productName.includes(input)) {
+    product.style.display = 'block'; 
+} else {
+    Product.style.display = 'none'; 
+}
+
+function filterProducts(searchValue) {
+const input = document.getElementById('search-input').value.toLowerCase();
+const products = document.querySelectorAll('.Products-Container .box');
+
+    products.forEach(product => {
+        
+        const productName = product.getAttribute('data-name') || '';
+        if (productName.toLowerCase().includes(input)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+    
+if (document.querySelector('#search-icon')) {
+document.querySelector('#search-icon').onclick = () => {
+Search.classList.toggle('active'); 
+navbar.classList.remove('active');
+};
+}
+const onScrollHandler = () => {
+navbar.classList.remove('active');
+Search.classList.remove('active');
+header.classList.toggle('shadow', window.scrollY > 0);
+};
+
+window.addEventListener('scroll', onScrollHandler);
+const products = document.querySelectorAll('.Products-Container .box');
+products.forEach(product => {
+const productName = product.getAttribute('data-name').toLowerCase();
+
+});
+
+
+
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("Neutral\ Background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 50px;
+    padding-right: 50PX;
+}
+.Home-text h1{
+    font-size: 2.5rem;
+    color: #e48b8b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}    
+.Home-text h2{
+    font-size: 1.5rem;
+    color: #e48b8b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+      }
+      
+.Home-text p{
+    font-size: 1.5rem;
+    color:  #ea95c3;
+    margin: 0.5rem 0 1.4rem;
+    text-align: center;
+}
+.Home-img{
+    width: 65%;
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    color:  #ea95c3;
+    font-weight: 500;
+    text-align: center;
+}
+.btn:hover{
+    background: #f1d4e3;
+}
+
+
+
